@@ -10,7 +10,7 @@ public class Main {
         Scanner in = new Scanner(System.in); //Configura o scanner
         number = in.nextInt();
 
-        result = number * 4;
+        result = number * number;
         System.out.println("O quadrado de " + number + " é " + result);
     }
 }
