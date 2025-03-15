@@ -4,6 +4,10 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/LP.iml" filepath="$PROJECT_DIR$/.idea/LP.iml" />
       <module fileurl="file://$PROJECT_DIR$/Listas de Exercícios/LP_Lista_02/exercicio_01/exercicio_01.iml" filepath="$PROJECT_DIR$/Listas de Exercícios/LP_Lista_02/exercicio_01/exercicio_01.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Listas de Exercícios/LP_Lista_02/exercicio_02/exercicio_02.iml" filepath="$PROJECT_DIR$/Listas de Exercícios/LP_Lista_02/exercicio_02/exercicio_02.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Listas de Exercícios/LP_Lista_02/exercicio_03/exercicio_03.iml" filepath="$PROJECT_DIR$/Listas de Exercícios/LP_Lista_02/exercicio_03/exercicio_03.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Listas de Exercícios/LP_Lista_02/exercicio_04/exercicio_04.iml" filepath="$PROJECT_DIR$/Listas de Exercícios/LP_Lista_02/exercicio_04/exercicio_04.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Listas de Exercícios/LP_Lista_02/exercicio_05/exercicio_05.iml" filepath="$PROJECT_DIR$/Listas de Exercícios/LP_Lista_02/exercicio_05/exercicio_05.iml" />
     </modules>
   </component>
 </project>
