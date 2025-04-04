@@ -12,9 +12,9 @@ public class Main {
         System.out.println("Digite x2: ");
         x2 = in.nextDouble();
 
-        soma = x1 + x2;
-        produto = x1 * x2;
+        soma = (-x1) + (-x2);
+        produto = (-x1) * (-x2);
 
-        System.out.println("A equação do segundo grau é: x² - " + soma + "x + " + produto + " = 0");
+        System.out.println("A equação do segundo grau é: x² " + soma + "x " + produto + " = 0");
     }
 }

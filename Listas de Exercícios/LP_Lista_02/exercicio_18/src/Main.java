@@ -13,7 +13,7 @@ public class Main {
         b = in.nextDouble();
 
         if(a!= 0 && b!= 0) {
-            result = b / a;
+            result = - b / a;
             System.out.println("O resultado é " + result);
         } else {
             System.out.println("A equação não é do primeiro grau");

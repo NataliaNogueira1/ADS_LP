@@ -18,8 +18,8 @@ public class Main {
         delta = (b * b) + (-4 * (a * c));
 
         if (delta >= 0) {
-            x1 = ((-(b) + Math.sqrt(delta)) / 2 * a);
-            x2 = ((-(b) - Math.sqrt(delta)) / 2 * a);
+            x1 = (-(b) + Math.sqrt(delta)) / (2 * a);
+            x2 = (-(b) - Math.sqrt(delta)) / (2 * a);
 
             System.out.println("O x1 é igual a: " + x1);
             System.out.println("O x2 é igual a: " + x2);
