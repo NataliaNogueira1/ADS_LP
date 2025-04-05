@@ -6,9 +6,9 @@ public class Main {
     public static void main(String[] args) {
         double number, sqrt;
 
-        System.out.println("Digite um número: ");
-
         Scanner in = new Scanner(System.in); //Configura o scanner
+
+        System.out.println("Digite um número: ");
         number = in.nextDouble();
 
         if (number >= 0) {

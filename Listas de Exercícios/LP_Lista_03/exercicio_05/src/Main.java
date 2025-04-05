@@ -20,14 +20,14 @@ public class Main {
         mean = (n1+n2)/2;
         System.out.println("Média: " + mean);
 
-        if (mean < 5){
-            System.out.println("Conceito: D");
-        }else if (mean >= 5 && mean < 7){
-            System.out.println("Conceito: C");
-        }else if (mean >= 7 && mean < 8.5){
-            System.out.println("Conceito: B");
-        }else{
+        if (mean >= 8.5){
             System.out.println("Conceito: A");
+        }else if (mean >= 7){
+            System.out.println("Conceito: B");
+        }else if (mean >= 5){
+            System.out.println("Conceito: C");
+        }else{
+            System.out.println("Conceito: D");
         }
     }
 }
