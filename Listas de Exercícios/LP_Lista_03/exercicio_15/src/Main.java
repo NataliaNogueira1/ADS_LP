@@ -43,32 +43,51 @@ public class Main {
         option = in.nextInt();
         switch (option){
             case 1:
-                System.out.println("\n------------------------------------");
-                System.out.println("\nBebida selecionada: Café Expresso");
+                if (din >= 0.5) {
+                    System.out.println("\n------------------------------------");
+                    System.out.println("\nBebida selecionada: Café Expresso");
 
-                troco = din - 0.50;
-                System.out.println("\nSeu Troco: R$ " + troco);
+                    troco = din - 0.50;
+                    System.out.printf("\nSeu Troco: R$ %.2f", troco);
+                }else{
+                    System.out.println("\nValor inserido insuficiente");
+                }
                 break;
             case 2:
-                System.out.println("\n------------------------------------");
-                System.out.println("\nBebida selecionada: Café Longo");
+                if (din >= 1.0) {
+                    System.out.println("\n------------------------------------");
+                    System.out.println("\nBebida selecionada: Café Longo");
 
-                troco = din - 1.00;
-                System.out.println("\nSeu Troco: R$ " + troco);
+                    troco = din - 1.00;
+                    System.out.printf("\nSeu Troco: R$ %.2f", troco);
+                }else{
+                    System.out.println("\nValor inserido insuficiente");
+                }
                 break;
             case 3:
-                System.out.println("\n------------------------------------");
-                System.out.println("\nBebida selecionada: Capuccino");
+                if (din >= 2.5) {
+                    System.out.println("\n------------------------------------");
+                    System.out.println("\nBebida selecionada: Capuccino");
 
-                troco = din - 2.50;
-                System.out.println("\nSeu Troco: R$ " + troco);
+                    troco = din - 2.50;
+                    System.out.printf("\nSeu Troco: R$ %.2f", troco);
+                }else{
+                    System.out.println("\nValor inserido insuficiente");
+                }
                 break;
             case 4:
-                System.out.println("\n------------------------------------");
-                System.out.println("\nBebida selecionada: Chocolate");
+                if (din >= 2.0) {
+                    System.out.println("\n------------------------------------");
+                    System.out.println("\nBebida selecionada: Chocolate");
 
-                troco = din - 2.00;
-                System.out.println("\nSeu Troco: R$ " + troco);
+                    troco = din - 2.00;
+                    System.out.printf("\nSeu Troco: R$ %.2f", troco);
+                }else{
+                    System.out.println("\nValor inserido insuficiente");
+                }
+                break;
+            default:
+                System.out.println("\nOpção inválida");
                 break;
         }
     }
