@@ -10,16 +10,14 @@ public class Main {
 
         for (int i = 0; i <= 10; i++){
             if (i % 2 == 0){
-                int s;
                 System.out.println(i+"\n"+numbers[i]);
-                s = numbers[i] + 2;
-                System.out.println(s);
+                numbers[i] = numbers[i] + 2;
+                System.out.println(numbers[i]);
                 System.out.println("----------");
             }else{
-                int s;
                 System.out.println(i+"\n"+numbers[i]);
-                s = numbers[i] + 2;
-                System.out.println(s);
+                numbers[i] = numbers[i] * 2;
+                System.out.println(numbers[i]);
                 System.out.println("----------");
             }
         }

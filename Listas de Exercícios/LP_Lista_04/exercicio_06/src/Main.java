@@ -16,8 +16,22 @@ public class Main {
         System.out.println("---------------------------");
         System.out.println("Números entre eles:");
 
-        for (int i = n1+1; i <= n2-1; i++) {
-            System.out.print(i + "\n");
+        if (n1 < n2) {
+            for (int i = n1 + 1; i <= n2 - 1; i++) {
+                System.out.print(i + "\n");
+            }
+        }else if (n1 > n2){
+            for (int i = n2 + 1; i <= n1 - 1; i++) {
+                System.out.print(i + "\n");
+            }
+        }else{
+            System.out.println("Números inválidos");
         }
+        // Versão alternativa:
+        //  if (number1 > number2){
+        //       aux = number1;
+        //       number1 = number2;
+        //        number2 = aux;
+        //   }
     }
 }

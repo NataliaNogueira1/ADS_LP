@@ -9,37 +9,36 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
+        int result;
+        char option;
+        boolean erro = false; //boolean só armazena true ou false
+
         Scanner in = new Scanner(System.in);
 
-        for (int i = 0; i < 11; i++){
-            for (int j = 0; j < 11; j++){
-                double s, n;
-
-                System.out.println(i+" x "+j+" = ");
-                System.out.println("Digite um número:");
-                n = in.nextDouble();
-
-                s = i*n;
-
-                if (n != s){
-                    String r;
-                    System.out.println("Perdeu!");
-                    break;
-                    System.out.println("Jogar novamente? (S/N)");
-                    r = in.nextLine();
-
-                        if( r == "S"){
-                            continue;
-                        }else if(r == "N"){
-
-                        }else{
-                            System.out.println("Inválido");
-                        }
-                }else{
-                    continue;
+        do{
+            erro = false;
+            for (int i=1; i <= 10; i++){
+                for (int j=0; j <= 10; j++){
+                    System.out.println(i + " x "+ j + " = ");
+                    result = in.nextInt();
+                    if (result != (i*j)){
+                        erro = true;
+                        System.out.println("Errou!!!");
+                        break;
+                    }
                 }
+                if (erro)
+                    break;
+                System.out.println("-------------------------");
+
             }
-            System.out.println("-------------------------");
-        }
+
+            if (!erro) // (erro)=true e (!erro) = false, se erro true, a pessoa errou
+                System.out.println("Você venceu!!!");
+            System.out.println("Jogar novamente? \nSim (S)\nNão (N)");
+            option = in.next().charAt(0); // O charAt lê só o primeiro caracter
+
+        }while(option == 's' || option=='S');
+        System.out.println("Obrigado por jogar :)");
     }
 }
