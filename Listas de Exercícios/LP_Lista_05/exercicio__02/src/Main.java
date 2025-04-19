@@ -2,7 +2,6 @@
 // percorra este vetor alterando seus valores conforme a seguinte
 // regra: some 2 a todos os valores situados em posições com índice
 // par e para as posições de índice ímpar multiplique seu valores por 2.
-import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
@@ -10,14 +9,14 @@ public class Main {
 
         for (int i = 0; i <= 10; i++){
             if (i % 2 == 0){
-                System.out.println(i+"\n"+numbers[i]);
+                System.out.println("Posição par: "+i+"\nNúmero: "+numbers[i]);
                 numbers[i] = numbers[i] + 2;
-                System.out.println(numbers[i]);
+                System.out.println("Número após operação: "+numbers[i]);
                 System.out.println("----------");
             }else{
-                System.out.println(i+"\n"+numbers[i]);
+                System.out.println("Posição ímpar: "+i+"\nNúmero: "+numbers[i]);
                 numbers[i] = numbers[i] * 2;
-                System.out.println(numbers[i]);
+                System.out.println("Número após operação: "+numbers[i]);
                 System.out.println("----------");
             }
         }

@@ -4,20 +4,25 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
+        int cont = 0, number;
+
         Scanner scanner = new Scanner(System.in);
+
         System.out.print("Insira um número: ");
-        int num = scanner.nextInt();
-        int calc = 0;
-        for (int i = 2; i <= num / 2; i++) {
-            if (num % i == 0) {
-                calc++;
+        number = scanner.nextInt();
+
+        for (int i = 2; i <= number / 2; i++) {
+            if (number % i == 0) {
+                cont++;
                 break;
             }
         }
-        if (calc == 0) {
-            System.out.println(num + " é um número primo");
-        } else {
-            System.out.println(num + " não é um número primo");
+
+        if (cont == 0) {
+            System.out.println("Seu número é primo");
+        }else{
+            System.out.println("Seu número não é primo");
         }
+
     }
 }
