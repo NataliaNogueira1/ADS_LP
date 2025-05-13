@@ -5,22 +5,16 @@
 public class Main {
     public static void main(String[] args) {
         int [] vetor = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
-        int[] aux = new int[vetor.length];
+        int aux = 0;
 
-        for (int i=0; i < vetor.length; i++){
-            aux[i] = vetor[i];
-            vetor[i] = vetor[vetor.length - 1 - i];
-        }
-;
-        System.out.println("Vetor 1:");
-        for (int i = 0; i < aux.length; i++){
-            System.out.print(aux[i]+", ");
+        for (int i=0; i < vetor.length/2; i++){
+            aux = vetor[vetor.length - 1 -i];
+            vetor[vetor.length - 1 - i] = vetor[i];
+            vetor[i] = aux;
         }
 
-        System.out.println("\nVetor 2:");
-        for (int i = 0; i < vetor.length; i++){
-            System.out.print(vetor[i]+", ");
+        for (int valor : vetor) {
+            System.out.print(valor + ", ");
         }
-
     }
 }
