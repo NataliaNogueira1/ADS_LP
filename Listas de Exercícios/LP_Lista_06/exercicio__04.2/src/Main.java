@@ -1,4 +1,5 @@
-//4. Escreva uma função em Java para verificar se uma *String* é um palíndromo.
+// RECURSIVA
+// 4. Escreva uma função em Java para verificar se uma *String* é um palíndromo.
 // A *String* deve ser digitada pelo usuário. Um palíndromo é uma palavra, frase
 // ou sequência que se lê da mesma forma de trás para frente.
 //Exemplos: “ovo”, “tenet”, “abasedotetodesaba”.
@@ -14,23 +15,21 @@ public class Main {
         System.out.print("Digite aqui: ");
         word = scanner.nextLine();
 
-        if (isPalindrome(word)){
+        if (isPalindrome(word, 0, word.length() - 1)) {
             System.out.print("É palíndromo");
-        }else{
+        } else {
             System.out.print("Não é palíndromo");
         }
 
     }
 
-    public static boolean isPalindrome(String word){
-        int start=0, end=word.length()-1;
-        while (start<end){
-            if(word.charAt(start)!=word.charAt(end))
-                return false;
-            start++;
-            end--;
+    public static boolean isPalindrome(String word, int start, int end) {
+        if (start >= end) {
+            return true;
         }
-        return true;
+        if (word.charAt(start) != word.charAt(end)) {
+            return false;
+        }
+        return isPalindrome(word, start + 1, end - 1);
     }
-
 }
