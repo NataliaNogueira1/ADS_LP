@@ -12,6 +12,7 @@ public class Main {
         int array[] = {58, 2, 3, 45, 67, 985, 1};
 
         Arrays.sort(array);
+
         Scanner n = new Scanner (System.in);
 
         System.out.println("Digite o número que deseja procurar:");
