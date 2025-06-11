@@ -28,12 +28,12 @@ public class Main {
             recovery = in.nextDouble();
 
             meane = (mean + recovery)/2;
-            System.out.println("Nova média: " + mean);
+            System.out.println("Nova média: " + meane);
 
             if (meane < 50){
-                System.out.println("Aprovado");
-            }else{
                 System.out.println("Reprovado");
+            }else{
+                System.out.println("Aprovado");
             }
         }
 

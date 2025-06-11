@@ -1,4 +1,5 @@
-//5. Implemente uma função para realizar uma busca binária em um array ordenado de inteiros,
+// RECURSIVA
+// 5. Implemente uma função para realizar uma busca binária em um array ordenado de inteiros,
 // retornando a posição do elemento buscado ou -1 se o elemento não for encontrado.
 //A busca binária é um algoritmo eficiente para encontrar um elemento em um vetor ordenado.
 // Ele funciona dividindo repetidamente o vetor pela metade e determinando em qual
@@ -14,43 +15,40 @@ public class Main {
 
         Arrays.sort(array);
 
-        Scanner in = new Scanner (System.in);
+        Scanner in = new Scanner(System.in);
 
         System.out.println("Digite o número que deseja procurar:");
         int num = in.nextInt();
 
-        int result = Pesquisa(array, num);
+        int result = Pesquisa(array, num, 0, array.length - 1);
 
-        System.out.println("Array depois de ordenada: ");
-        for (int i=0; i < array.length; i++){
-            System.out.print(array[i]+", ");
+        System.out.println("Array depois de ordenado: ");
+        for (int i = 0; i < array.length; i++) {
+            System.out.print(array[i] + ", ");
         }
 
         System.out.println("\n");
 
-        if(result != -1) {
+        if (result != -1) {
             System.out.println("O número digitado existe na posição: " + result);
-        }else {
+        } else {
             System.out.println(-1);
         }
     }
 
-    public static int Pesquisa(int[] array, int num){
-        int start = 0;
-        int end = array.length -1;
-
-        while (start <= end) {
-            int meio = (start + end) / 2;
-
-            if (array[meio] == num) {
-                return meio;
-            } else if (array[meio] < num) {
-                start = meio + 1;
-            } else {
-                end = meio - 1;
-            }
+    public static int Pesquisa(int[] array, int num, int start, int end) {
+        if (start > end) {
+            return -1;
         }
 
-        return -1;
+        int n = (start + end) / 2;
+
+        if (array[n] == num) {
+            return n;
+        } else if (array[n] > num) {
+            return Pesquisa(array, num, start, n - 1);
+        } else {
+            return Pesquisa(array, num, n + 1, end);
+        }
     }
 }

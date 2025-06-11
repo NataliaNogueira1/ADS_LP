@@ -4,12 +4,12 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        double n;
+        int n;
 
         Scanner in = new Scanner(System.in); //Configura o scanner
 
         System.out.println("Digite um número:");
-        n = in.nextDouble();
+        n = in.nextInt();
 
         if (n % 2 == 0){
             System.out.println("O número " + n + " é par");
